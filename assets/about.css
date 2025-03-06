@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
-    color: #666666;
+    color: #fff;
 }
 
 .navbar {
@@ -52,64 +52,44 @@ body {
     color: #ca24b4;
 }
 
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.about-section {
+    flex-direction: row;
     max-width: 1200px;
-    margin: 0px auto;
-    padding: 20px;
-    margin-bottom: 40px;
+    margin: 20px auto;
+    padding: 20px 100px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.text-section {
-    flex: 1;
-    padding-right: 50px;
+.about-section h2 {
+    font-size: 28px;
+    color: #555;
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 
-.text-section h1 {
-    padding-left: 20px;
-    font-weight: bold;
-    font-size: 24px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-
-.text-section p {
-    padding: 20px;
-    font-size: 16px;
+.about-section p {
+    font-size: 14px;
+    color: #555;
     line-height: 1.6;
+    margin-bottom: 50px;
 }
 
-hr {
-    width: 700px;
-    margin-left: 20px;
+.experience-item {
+    margin-bottom: 20px;
 }
 
-.experience-card {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 20px;
-    max-width: 780px;
-    width: 100%;
+.education-item {
+    margin-bottom: 0px;
 }
 
-.job-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-}
-.job-title {
-    font-size: 16px;
+.employment-type {
     font-weight: bold;
-    color: #666666;
+    font-size: 14px;
+    color: green;
 }
 
-.emp {
+.time {
     width: 75px;
     height: 20px;
     border-radius: 8px;
@@ -119,36 +99,28 @@ hr {
     background-color: lightgreen;
 }
 
-.employment-type {
+.experience-item .job-title, .education-item .school-level {
+    display: flex;
+    color: #555;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
     font-weight: bold;
-    font-size: 12px;
-    color: green;
+    margin-bottom: 10px;
 }
-.company-duration {
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+    margin-bottom: 20px;
+}
+.experience-item .company, .education-item .school-name {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.company {
-    font-size: 12px;
-    color: #666666;
-}
-.duration {
-    font-size: 12px;
-    color: #666666;
-}
-
-.image-section {
-    flex: 1;
-    text-align: right;
-    margin-left: 50px;
-}
-
-.image-section img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    color: #555;
 }
 
 @media (max-width: 840px) {
@@ -269,6 +241,28 @@ hr {
         margin-bottom: 20px;
     }
 
+    .about-section {
+        max-width: 90%;
+        margin: 30px auto;
+        padding: 15px;
+    }
+
+    .about-section h2 {
+        font-size: 24px;
+    }
+
+    .about-section h3 {
+        font-size: 20px;
+    }
+
+    .experience-item .job-title, .education-item .school-level {
+        font-size: 16px;
+    }
+
+    .experience-item .company, .education-item .school-name {
+        font-size: 14px;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -279,6 +273,17 @@ hr {
     }
     .logo {
         font-size: 12px;
+        margin-left: 20px;
+    }
+
+    .footer {
+        padding: 20px 10px;
+        margin-top: -20px;
+        margin-bottom: 30px;
+    }
+
+    .f-logo {
+        font-size: 15px;
         margin-left: 20px;
     }
 
@@ -306,6 +311,60 @@ hr {
     .text-section p {
         font-size: 16px;
     }
+
+    /* Stack section responsiveness for very small screens */
+    .stack-section h2 {
+        font-size: 24px;
+    }
+
+    .stack-section p {
+        font-size: 16px;
+    }
+
+    .stack-images img {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* Projects section responsiveness for very small screens */
+    .projects-section h2 {
+        font-size: 24px;
+    }
+
+    .projects-section p {
+        font-size: 16px;
+    }
+
+    .project-card h3 {
+        font-size: 18px;
+    }
+
+    .project-card p {
+        font-size: 14px;
+    }
+    
+}
+
+@media (max-width: 380px) {    
+    .navbar {
+    padding: 20px 10px;
+    margin-bottom: 10px;
+}
+.logo {
+    font-size: 10px;
+    margin-left: 20px;
+}
+
+.footer {
+    padding: 20px 0px;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+.f-logo {
+    font-size: 10px;
+    margin-left: 20px;
+}
 
 .nav-links a {
     font-size: 10px;

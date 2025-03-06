@@ -198,6 +198,76 @@ body {
     margin-bottom: 40px;
 }
 
+.about-section {
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px 100px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+    font-size: 28px;
+    color: #555;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.about-section p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+
+.experience-item {
+    margin-bottom: 20px;
+}
+
+.education-item {
+    margin-bottom: 0px;
+}
+
+.employment-type {
+    font-weight: bold;
+    font-size: 14px;
+    color: green;
+}
+
+.time {
+    width: 75px;
+    height: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgreen;
+}
+
+.experience-item .job-title, .education-item .school-level {
+    display: flex;
+    color: #555;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+    margin-bottom: 20px;
+}
+.experience-item .company, .education-item .school-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+}
 
 /* Responsive design */
 
@@ -317,6 +387,28 @@ body {
         justify-content: space-between;
         align-items: center;
         margin-bottom: 20px;
+    }
+
+    .about-section {
+        max-width: 90%;
+        margin: 30px auto;
+        padding: 15px;
+    }
+
+    .about-section h2 {
+        font-size: 24px;
+    }
+
+    .about-section h3 {
+        font-size: 20px;
+    }
+
+    .experience-item .job-title, .education-item .school-level {
+        font-size: 16px;
+    }
+
+    .experience-item .company, .education-item .school-name {
+        font-size: 14px;
     }
 
 }
