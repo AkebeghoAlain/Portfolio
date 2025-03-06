@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 46px 160px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #DE4C36;
+}
+
+.f-logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #DE4C36;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-links a {
+    color: #666666;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.nav-links a img {
+    margin-left: 10px;
+}
+
+.nav-links a:hover {
+    color: #ca24b4;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 20px;
+    background-color: white;
+}
+
+.text-section {
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+    height: 400px;
+    padding-right: 50px;
+}
+
+.text-section h1 {
+    font-weight: bold;
+    background: linear-gradient(to bottom, #13B0F5, #E70FAA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 36px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.text-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
