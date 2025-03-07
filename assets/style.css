@@ -33,7 +33,6 @@ body {
 .nav-links {
     display: flex;
     align-items: center;
-
 }
 
 .nav-links a {
@@ -46,6 +45,19 @@ body {
 
 .nav-links a img {
     margin-left: 10px;
+}
+
+.nav-links button {
+    margin-right: 30px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: white;
+    width: 30px;
+    height: 25px;
+}
+
+.nav-links button img {
+    margin-top: 2.5px;
 }
 
 .nav-links a:hover {
@@ -85,7 +97,7 @@ body {
 
 .image-section {
     flex: 1;
-    text-align: right;
+    text-align: center;
 }
 
 .image-section img {
@@ -110,7 +122,7 @@ body {
 }
 
 .stack-section p {
-    font-size: 18px;
+    font-size: 14px;
     margin-bottom: 50px;
 }
 
@@ -198,80 +210,74 @@ body {
     margin-bottom: 40px;
 }
 
-.about-section {
-    flex-direction: row;
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 20px 100px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
 }
 
-.about-section h2 {
-    font-size: 28px;
-    color: #555;
-    margin-top: 30px;
-    margin-bottom: 30px;
+.dark-mode .navbar {
+    background-color: #1a1a1a;
 }
 
-.about-section p {
-    font-size: 14px;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 50px;
+.dark-mode .logo, .dark-mode .f-logo {
+    color: #DE4C36;
 }
 
-.experience-item {
-    margin-bottom: 20px;
+.dark-mode .nav-links a {
+    color: #c2c2c2;
 }
 
-.education-item {
-    margin-bottom: 0px;
+.dark-mode .nav-links a:hover {
+    color: #ca24b4;
 }
 
-.employment-type {
-    font-weight: bold;
-    font-size: 14px;
-    color: green;
+.dark-mode .nav-links button {
+    margin-right: 30px;
+    background-color: #c2c2c2;
+    border-radius: 5px;
+    width: 30px;
 }
 
-.time {
-    width: 75px;
-    height: 20px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: lightgreen;
+.dark-mode .container, .dark-mode .stack-section, .dark-mode .projects-section, .dark-mode .project-card {
+    background-color: #1a1a1a;
+    color: #c2c2c2;
+    box-shadow: 0 0 15px rgba(165, 165, 165, 0.1);
 }
 
-.experience-item .job-title, .education-item .school-level {
-    display: flex;
-    color: #555;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 10px;
+.dark-mode .container .image-section {
+    box-shadow: 0 0 15px rgba(165, 165, 165, 0.1);
 }
 
-hr {
-    border: none;
-    border-top: 1px solid #ddd;
-    margin: 10px 0;
-    margin-bottom: 20px;
+.dark-mode .text-section h1 {
+    background: linear-gradient(to right, #13B0F5, #E70FAA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-.experience-item .company, .education-item .school-name {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 14px;
-    color: #555;
+
+.dark-mode .stack-section h2, .dark-mode .projects-section h2, .dark-mode .project-card h3 {
+    color: #c2c2c2;
+}
+
+.dark-mode .stack-section p, .dark-mode .projects-section p, .dark-mode .project-card p {
+    color: #c2c2c2;
+}
+
+.dark-mode .footer {
+    background-color: #1a1a1a;
+}
+
+.dark-mode .footer .nav-links a {
+    color: #c2c2c2;
+}
+
+.dark-mode .footer a:hover {
+    color: #ca24b4;
 }
 
 /* Responsive design */
 
-@media (max-width: 840px) {
+@media (max-width: 890px) {
     .navbar {
         padding: 20px 20px;
         display: flex;
@@ -290,6 +296,21 @@ hr {
         margin-left: 0px;
         margin-right: 15px;
         margin-top: -22px;
+    }
+
+    .dark-mode .nav-links button {
+        margin-right: 30px;
+        background-color: #c2c2c2;
+        border-radius: 5px;
+        width: 30px;
+        margin-top: -25px;
+    }
+
+    .nav-links button {
+        margin-right: 30px;
+        border-radius: 5px;
+        width: 30px;
+        margin-top: -25px;
     }
 
     .container {
@@ -351,6 +372,32 @@ hr {
         margin-right: 15px;
         margin-top: -22px;
     }
+ .nav-links button {
+        margin-right: 20px;
+        border-radius: 5px;
+        width: 25px;
+        height: 18px;
+        margin-top: -28px;
+    }
+
+.nav-links button img {
+        width: 12px;
+        margin-top: 2px;
+    }
+
+    .dark-mode .nav-links button {
+        margin-right: 20px;
+        background-color: #c2c2c2;
+        border-radius: 5px;
+        width: 25px;
+        height: 18px;
+        margin-top: -28px;
+    }
+
+    .dark-mode .nav-links button img {
+        width: 12px;
+        margin-top: 2px;
+    }
 
     .container {
         flex-direction: column;
@@ -360,11 +407,13 @@ hr {
 
     .text-section {
         padding-right: 0;
-        margin-bottom: 20px;
+        margin-top: 50px;
+        margin-bottom: 30px;
     }
 
     .image-section {
         text-align: center;
+        margin-bottom: 20px;
     }
 
     .stack-images img {
@@ -387,6 +436,14 @@ hr {
         justify-content: space-between;
         align-items: center;
         margin-bottom: 20px;
+    }
+
+    .footer .nav-links a {
+        margin-top: -23px;
+    }
+
+    .footer .nav-links a img {
+        margin-top: 3px;
     }
 
     .about-section {
@@ -419,7 +476,35 @@ hr {
         padding: 20px 10px;
         margin-bottom: 30px;
     }
+
+ .nav-links button {
+        margin-right: 20px;
+        border-radius: 5px;
+        width: 20px;
+        height: 15px;
+        margin-top: -28px;
+    }
+
+    .nav-links button img {
+        width: 12px;
+        margin-top: 0px;
+    }
+
+    .dark-mode .nav-links button {
+        margin-right: 20px;
+        background-color: #c2c2c2;
+        border-radius: 5px;
+        width: 20px;
+        height: 15px;
+        margin-top: -28px;
+    }
+
+    .dark-mode .nav-links button img {
+        width: 12px;
+        margin-top: 0px;
+    }
     .logo {
+        margin-top: 8px;
         font-size: 12px;
         margin-left: 20px;
     }
@@ -433,6 +518,8 @@ hr {
     .f-logo {
         font-size: 15px;
         margin-left: 20px;
+        margin-top: 2px;
+
     }
 
     .nav-links a {
@@ -498,9 +585,38 @@ hr {
     padding: 20px 10px;
     margin-bottom: 10px;
 }
+
+.nav-links button {
+    margin-right: 10px;
+    border-radius: 5px;
+    width: 20px;
+    height: 16px;
+    margin-top: -30px;
+}
+
+.nav-links button img {
+    width: 12px;
+    margin-top: 0px;
+}
+
+.dark-mode .nav-links button {
+    margin-right: 10px;
+    background-color: #c2c2c2;
+    border-radius: 5px;
+    width: 20px;
+    height: 16px;
+    margin-top: -30px;
+}
+
+.dark-mode .nav-links button img {
+    width: 12px;
+    margin-top: 0px;
+}
 .logo {
+    margin-top: 6px;
     font-size: 10px;
     margin-left: 20px;
+    margin-right: 40px;
 }
 
 .footer {
